@@ -25,9 +25,9 @@ Tags are defined by the mask: `devdotnetorg/openssh-server:<OS_name>-<OS_version
 
 Images for the following OS versions are builded:
 
-* Ubuntu: 16.04, 18.04, 20.04, 22.04, 22.10, 23.04, 23.10, 24.04;
+* Ubuntu: 16.04, 18.04, 20.04, 22.04, 23.04, 24.04;
 * Debian: 10, 11, 12;
-* Alpine: 3.15, 3.16, 3.17, 3.18, 3.19, 3.20.
+* Alpine: 3.15, 3.16, 3.17, 3.18, 3.19, 3.20, 3.21.
 
 ### Tags for RISC-V (riscv64)
 
