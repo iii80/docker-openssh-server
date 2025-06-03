@@ -10,9 +10,9 @@ set -e
 
 echo "Start BUILDX"
 
-#:ubuntu 16.04, 18.04, 20.04, 22.04, 23.10, 24.04
+#:ubuntu 16.04, 18.04, 20.04, 22.04, 24.04
 #:debian 10, 11, 12
-for IMAGE_VERSION in ubuntu:16.04 ubuntu:18.04 ubuntu:20.04 ubuntu:22.04 ubuntu:23.10 ubuntu:24.04 debian:10 debian:11 debian:12
+for IMAGE_VERSION in ubuntu:16.04 ubuntu:18.04 ubuntu:20.04 ubuntu:22.04 ubuntu:24.04 debian:10 debian:11 debian:12
 do
   #
   declare IMAGE_VERSION_2=$(echo "$IMAGE_VERSION" | tr : -)
