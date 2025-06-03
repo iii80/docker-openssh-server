@@ -29,8 +29,8 @@ docker buildx build --platform linux/arm,linux/arm64,linux/amd64 -f Dockerfile.u
 #latest debian:12
 docker buildx build --platform linux/arm,linux/arm64,linux/amd64 -f Dockerfile.ubuntu --build-arg IMAGE_VERSION=debian:12 -t devdotnetorg/openssh-server:debian . --push
 
-#:alpine 3.16, 3.17, 3.18, 3.19, 3.20
-for IMAGE_VERSION in alpine:3.16 alpine:3.17 alpine:3.18 alpine:3.19 alpine:3.20
+#:alpine 3.16, 3.17, 3.18, 3.19, 3.20, 3.21
+for IMAGE_VERSION in alpine:3.16 alpine:3.17 alpine:3.18 alpine:3.19 alpine:3.20 alpine:3.21
 do
   #
   declare IMAGE_VERSION_2=$(echo "$IMAGE_VERSION" | tr : -)
@@ -40,8 +40,8 @@ do
   #
 done
 
-#latest alpine:3.20
-docker buildx build --platform linux/arm,linux/arm64,linux/amd64 -f Dockerfile.alpine --build-arg IMAGE_VERSION=alpine:3.20 -t devdotnetorg/openssh-server:alpine . --push
+#latest alpine:3.21
+docker buildx build --platform linux/arm,linux/arm64,linux/amd64 -f Dockerfile.alpine --build-arg IMAGE_VERSION=alpine:3.21 -t devdotnetorg/openssh-server:alpine . --push
 
 # RISC-V (riscv64)
 #:ubuntu-riscv64
